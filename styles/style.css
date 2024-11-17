@@ -1,0 +1,518 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+h1{
+  font-family: 'Mynerve', cursive;
+  text-shadow: 4px 4px 6px #000;
+  font-weight: 700;
+  font-size: max(44px, 5.2vw);
+}
+
+h2{
+  font-family: 'Marhey', cursive;
+  text-shadow: 2px 2px 4px #464646;
+  font-weight: 700;
+  font-size: max(20px, 2.8vw);
+}
+
+/* ------------- BOTÃO CHAMADA ------------- */
+
+div.chamada a{
+  font-size: max(16px, 1.8vw);
+  color: #fff;
+  text-decoration: none;
+  padding: 20px 80px;
+  border-radius: 50px;
+  font-weight: 600;
+  background: green;
+
+  display: inline-block;
+
+  animation-name: HeaderA-moverParaCima;
+  animation-duration: 1s;
+  animation-delay: 1s;
+  animation-timing-function: ease-out;
+  animation-fill-mode: backwards;
+  transition: .3s ease-in-out;
+
+}
+
+div.chamada a:hover{
+  opacity: .8;
+}
+
+/* ----------------------------------------- */
+/*            ELEMENTOS DO HEADER            */
+/* ----------------------------------------- */       
+
+/* header{
+    max-width: 100%;
+    height: 90vh;
+    background: url('../images/headerCapaG.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+
+    position: relative;
+} */
+
+ header{
+  max-width: 100%;
+  height: 90vh;
+  background-color: #0008b0;
+  border-bottom: 5px solid #ffd700;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+
+  position: relative;
+} 
+
+/* -------------- NAVEBAR ---------------- */
+
+header nav#nav-esquerda{
+  width: 100%;
+  height: 140px;
+
+  display: flex;
+  flex-flow: row;
+  align-items: center;
+  background-color: #0008b0;
+  margin-left: 12rem;
+}
+
+header nav#nav-esquerda div#logo{
+  max-width: 100px;
+  max-height: 120px;
+  margin-left: 5rem;
+  display: none;
+}
+
+header nav#nav-esquerda div#logo img{
+  max-width: 100%;
+  max-height: 100%;
+}
+
+/* ----------- MENU HAMBURGUER ----------- */
+header nav#nav-esquerda ul#icone-menu{
+  display: none;
+}
+
+header nav#nav-esquerda ul#icone-menu li{
+  list-style: none;
+}
+
+header nav#nav-esquerda ul#icone-menu li ion-icon{
+  font-size: 50px;
+  color: gold;
+  margin-right: 2rem;
+}
+
+/* ---------- MENU PRINCIPAL ------------- */
+
+header nav#nav-esquerda ul.menu-principal{
+  margin-left: 12rem;
+
+  display: flex;
+  flex-flow: row wrap;
+}
+
+header nav#nav-esquerda ul.menu-principal li{
+  list-style: none;
+  margin-right: 2rem;
+}
+
+header nav#nav-esquerda ul.menu-principal li a{
+  text-decoration: none;
+  color: gold;
+  font-size: 110%;
+  text-shadow: 4px 6px 10px #000;
+  padding-bottom: 10px;
+  transition: .3s ease-in-out; 
+}
+
+header nav#nav-esquerda ul.menu-principal li a:hover{
+  opacity: .6;
+  border-bottom: 1px solid #ffd700; 
+}
+
+/* ------------- CHAMADA ---------------- */
+
+header div.chamada{
+  position:absolute;
+  width: 100%;
+  height: 300px;
+  text-align: center;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+header div.chamada h1{
+  color: #ffd700;
+
+  animation-name: HeaderH1-moverParaDireita;
+  animation-duration: 2s;
+  animation-timing-function: ease-out;
+  font-family: racing sans one;
+}
+
+header div.chamada h2{
+  color: #fff;
+
+  margin-bottom: 55px;
+
+  animation-name: HeaderH2-moverParaEsquerda;
+  animation-duration: 1.5s;
+  animation-delay: 0.5s;
+  animation-timing-function: ease-out;
+  animation-fill-mode: backwards;
+  font-family: sans one;
+}
+
+/* ---------------------------------- */
+/*              SERVIÇOS              */
+/* ---------------------------------- */
+
+section.servicos{
+  max-width: 100%;
+  padding-top: 60px;
+  padding-bottom: 30px;
+  /*margin-bottom: 20px;*/
+  text-align: center;
+
+  background-color: #e8e8e8;
+}
+
+section.servicos div.servicos-mestre{
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+section.servicos div.servicos-mestre img{
+  border: 2px solid #ffd700;
+  border-radius: 5px;
+  border-radius: 50%;
+  margin-top: 1rem;
+}
+
+@media screen and (min-width: 1110px){
+section.servicos div.servicos-mestre p{
+  width: 400px;
+  text-align: center;
+  margin-left: 28rem;
+}
+}
+
+/* ------------ BOOTSTRAP "SERVIÇOS" ------------ */
+
+@media screen and (min-width: 1110px){
+
+section.servicos div.col-lg-4{
+  text-align: justify;
+  max-width: 50%;
+  text-align: center;
+  padding-bottom: 30px;
+  margin-top: 1rem;
+}
+
+section.servicos div.col-lg-4 img{
+  margin-left: -17rem;
+  border-radius: 5px;
+  border-radius: 50%;
+}
+
+section.servicos div.col-lg-4 h2{
+  margin-left: -17rem;
+  font-size: 30px;
+  margin-top: 0.1rem;
+}
+
+section.servicos div.col-lg-4 p{
+  text-align: justify;
+  max-width: 60%;
+  margin-left: 0.5rem;
+}
+
+section.servicos div.col-lg-5{
+  text-align: justify;
+  max-width: 50%;
+  text-align: center;
+  padding-bottom: 30px;
+  margin-left: 30rem;
+  margin-top: -17.3rem;
+}
+
+section.servicos div.col-lg-5 img{
+  margin-left: -20rem;
+  margin-top: -26px;
+  border-radius: 5px;
+  border-radius: 50%;
+}
+
+section.servicos div.col-lg-5 h2{
+  margin-left: -20rem;
+  font-size: 30px;
+}
+
+section.servicos div.col-lg-5 p{
+  text-align: justify;
+  max-width: 60%;
+  margin-left: -26px;
+}
+
+section.servicos div.col-lg-6{
+  text-align: justify;
+  max-width: 50%;
+  text-align: center;
+  padding-bottom: 30px;
+  margin-left: 50rem;
+  margin-top: -19rem;
+}
+
+section.servicos div.col-lg-6 img{
+  margin-right: -6rem;
+  border-radius: 5px;
+  border-radius: 50%;
+  margin-top: -35px;
+
+}
+
+section.servicos div.col-lg-6 h2{
+  margin-right: -6rem;
+  font-size: 30px;
+}
+
+section.servicos div.col-lg-6 p{
+  text-align: justify;
+  max-width: 60%;
+  margin-left: 9rem;
+}
+
+}
+
+/* --------------------------------------- */
+/*              SECTION SOBRE              */
+/* --------------------------------------- */
+
+
+section.sobre{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-top: 5px solid #ffd700;
+  padding-top: 20px;
+  padding-bottom: 40px;
+
+  background-color: #0008b0;
+}
+
+section.sobre h2{
+  margin-top: 40px;
+  margin-bottom: 50px;
+  max-width: 950px;
+  text-align: center;
+  color: #ffd700;
+  font-size: max(22px, 2.8vw);
+}
+
+section.sobre div.sobre-mestre{
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+
+section.sobre div.sobre-mestre div.sobre-texto{
+  max-width: 800px;
+  text-align: left;
+  line-height: 1.8;
+  margin-bottom: 20px;
+}
+
+section.sobre div.sobre-mestre div.sobre-texto p{
+  width: 90%;
+  margin: auto;
+  color: #fff;
+  font-size: max(16px, 1vw);
+  text-align: justify;
+}
+
+section.sobre div.sobre-mestre div.sobre-img{
+  max-width: 400px;
+}
+
+section.sobre div.sobre-mestre div.sobre-img img{
+  max-width: 100%;
+  width: 300px;
+  height: 300px;
+  margin-top: 40px;
+}
+
+/* ------------------------------------------------ */
+/*                SECTION HORARIO                   */
+/* ------------------------------------------------ */
+
+@media screen and (min-width: 1110px){
+      section.horario{
+        max-width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border-top: 5px solid #ffd700;
+        padding-top: 40px;
+        padding-bottom: 60px;
+
+        background-color: #e8e8e8;
+      }
+
+      /*section.horario div.horario-mestre{
+        width: 100%;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        margin-bottom: 40px;
+      }*/
+
+      section.horario div.horario-mestre div.horario-texto h2{
+        margin-top: 40px;
+        margin-bottom: 50px;
+        max-width: 950px;
+        text-align: center;
+        color: #0008b0;
+        font-size: max(22px, 2.8vw);
+        margin-left: 4rem;
+      }
+
+      section.horario div.horario-mestre div.horario-texto p{
+        max-width: 50%;
+        text-align: justify;
+        margin-left: 33rem;
+        color: #000;
+        line-height: 35px;
+        font-size: 1rem;
+        margin-top: 10px;
+      }
+
+      section.horario div.horario-mestre div.horario-maps{
+        max-width: 400px;
+      }
+
+      section.horario div.horario-mestre div.horario-maps iframe{
+        margin-left: 5rem;
+        margin-top: -55rem;
+        margin-bottom: 20px;
+        width: 400px;
+        height: 400px;
+        border: 6px solid #0008b0;
+      }
+
+}
+
+/* ---------------------------------------------- */
+/*               ELEMENTOS DO FOOTER              */
+/* ---------------------------------------------- */
+
+footer{
+  width: 100%;
+  background-color: #0008b0;
+  padding-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-top: 5px solid #ffd700;
+}
+
+footer div.footer-container{
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  margin-top: -55rem;
+}
+footer div.nome-empresa h2{
+   margin-top: 57rem;
+   color: #ffd700;
+   font-family: racing sans one;
+   margin-left: 1rem;
+   cursor: pointer;
+}
+
+footer div.nome-empresa p{
+   color: #fff;
+   font-family: sans one;
+   margin-left: 57px;
+   cursor: pointer;
+}
+
+/*footer div.nome-empresa img{
+  height: 300px;
+  width: 300px;
+  margin-top: -20rem;
+  margin-left: 20px;
+  cursor: pointer;
+  display: none;
+}*/
+
+footer div.footer-container div.footer-info{
+  width: 70%;
+  margin-bottom: 50px;
+  padding-top: 20px;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+footer div.footer-container div.footer-info p{
+  font-size: 25px; 
+  color: #fff;
+  line-height: 2rem;
+  margin-top: 60rem; /*55rem*/
+  display: flex;
+  margin-left: 9rem; 
+  padding-top: 1px; /*1rem*/
+
+}
+
+footer div.footer-container div.footer-info div.cartoes{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+footer div.footer-container div.footer-info div.cartoes span{
+  font-family: 'Roboto', sans-serif;
+  color: #fff;
+  font-size: max(16px, 1.5vw);
+  margin-left: 36rem;
+  margin-top: -11rem; /*-8rem*/
+  display: flex;
+  padding-top: 25px; /*30px*/
+}
+
+footer div.footer-container div.footer-info div.cartoes div.footer-img-cartoes{
+  max-width: 340px;
+}
+
+footer div.footer-container div.footer-info div.cartoes div.footer-img-cartoes img{
+  max-width: 100%;
+  margin-left: 18rem;
+  margin-top: 1px;
+}
+
+footer span.autorais{
+  color: #fff;
+  font-size: max(14px, .8vw);
+  margin-top: -10px;
+}
